@@ -1,0 +1,1 @@
+web: gunicorn memoirepractical.wsgi --log-file -
