@@ -21,3 +21,15 @@ heroku ps:scale web=1
 heroku open
 
 ça a marché. # premier déploiement réussit # git commit -m " premier déploiement réussit "
+
+# second test 
+
+# gestion des css 
+pipenv install whitenoise==3.3.1
+# dans installed apps 
+'whitenoise.runserver_nostatic',  # new!
+# dans middleware 
+'whitenoise.middleware.WhiteNoiseMiddleware', # new!
+# ajout de 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # new!
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' # new!
