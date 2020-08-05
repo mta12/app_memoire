@@ -1,0 +1,23 @@
+git init
+git status
+git commit -m "first commit"
+git remote add origin https://github.com/mta12/app_memoire.git
+git push -u origin master
+
+heroku create
+https://thawing-springs-89094.herokuapp.com/ | https://git.heroku.com/thawing-springs-89094.git
+
+heroku git:remote -a thawing-springs-89094
+
+#ignore static files 
+heroku config:set DISABLE_COLLECTSTATIC=1
+
+git push heroku master
+
+# we need to make our Heroku app live
+heroku ps:scale web=1
+
+#confirmer 
+heroku open
+
+ça a marché. # premier déploiement réussit # git commit -m " premier déploiement réussit "
