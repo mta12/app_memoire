@@ -4,7 +4,7 @@ git commit -m "first commit"
 git remote add origin https://github.com/mta12/app_memoire.git
 git push -u origin master
 
-heroku create
+heroku create # on peut ajouter le nom de l'appli
 https://thawing-springs-89094.herokuapp.com/ | https://git.heroku.com/thawing-springs-89094.git
 
 heroku git:remote -a thawing-springs-89094
@@ -33,3 +33,18 @@ pipenv install whitenoise==3.3.1
 # ajout de 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # new!
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' # new!
+
+git add -A
+(blog) $ git commit -m 'Heroku config'
+(blog) $ git push origin master
+blog) $ git push heroku master
+(blog) $ heroku ps:scale web=1
+
+# Il ya une erreur 
+at=error code=H10 desc="App crashed" method=GET path="/search/?q=Manga" host=thawing-springs-89094.herokuapp.com 
+request_id=e1c5fbe4-d2ca-4a17-82c3-676294f4ec57 fwd="41.204.93.74" dyno= connect= service= 
+status=503 bytes= protocol=https
+2020-08-05T08:57:02.946336+00:00 heroku[router]: at=error code=H10 desc="App crashed" 
+method=GET path="/" host=thawing-springs-89094.herokuapp.com 
+request_id=918f3e57-448a-4f99-8a30-e1088529ad03 fwd="41.204.93.74" 
+dyno= connect= service= status=503 bytes= protocol=https
