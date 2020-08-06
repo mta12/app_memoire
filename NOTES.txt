@@ -1,11 +1,18 @@
+
 git init
 git status
 git commit -m "first commit"
 git remote add origin https://github.com/mta12/app_memoire.git
 git push -u origin master
 
+pipenv lock 
+
+heroku login 
+
 heroku create # on peut ajouter le nom de l'appli
 https://thawing-springs-89094.herokuapp.com/ | https://git.heroku.com/thawing-springs-89094.git
+
+https://memoireapp-uy2.herokuapp.com/ | https://git.heroku.com/memoireapp-uy2.git
 
 heroku git:remote -a thawing-springs-89094
 
