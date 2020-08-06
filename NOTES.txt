@@ -44,7 +44,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' 
 git add -A
 (blog) $ git commit -m 'Heroku config'
 (blog) $ git push origin master
-heroku git:remote -a thawing-springs-89094
+heroku git:remote -a memoireapp-uy2
 #ignore static files 
 heroku config:set DISABLE_COLLECTSTATIC=1
 blog) $ git push heroku master
