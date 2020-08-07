@@ -12,7 +12,7 @@ heroku login
 heroku create # on peut ajouter le nom de l'appli
 https://thawing-springs-89094.herokuapp.com/ | https://git.heroku.com/thawing-springs-89094.git
 
-https://memoireapp-uy2.herokuapp.com/ | https://git.heroku.com/memoireapp-uy2.git
+https://memoireapp3.herokuapp.com/ | https://git.heroku.com/memoireapp3.git
 
 heroku git:remote -a thawing-springs-89094
 
@@ -62,3 +62,6 @@ dyno= connect= service= status=503 bytes= protocol=https
 Sol1: pip install --upgrade whitenoise
 - j'ai mis le dossier static dans la racine 
 - j'ai créé le dossier staticfiles avec ./manage.py collectstatic 
+
+1- Penser à réduire la taille des images au lancement
+2- gérer les tailles d'écran
