@@ -1,0 +1,59 @@
+/* HOME PAGE Les styles généraux, non spécifiques aux entetes, corps et pieds.*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.body-court {
+    font-family: "Lato", sans-serif;
+    margin: 25px;
+    width: 90%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+header {
+    flex: 1;
+    width: 90%;
+    margin: auto;
+    /*margin-bottom: 10px;
+    
+     border: 2px solid;*/
+    border-color: green;
+    background-image: url(../img/fond-ecran-liste.jpg);
+}
+
+main {
+    border-color: yellow;
+    width: 100%;
+}
+
+footer {
+    border-color: red;
+    margin-top: auto;
+    margin-bottom: 0%;
+}
+
+
+/** GESTION DES TAILLES D'ECRANS */
+
+@media screen and (max-width:1024px) {
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .body-court {
+        font-family: "Lato", sans-serif;
+        margin: 5px;
+        width: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}

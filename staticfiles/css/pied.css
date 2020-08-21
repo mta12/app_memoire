@@ -12,21 +12,6 @@
     font-weight: bold;
 }
 
-footer {
-    margin-top: auto;
-    margin-bottom: 0%;
-}
-
-footer:nth-child(3) {
-    border-top: 1px solid;
-    border-color: red;
-}
-
-footer {
-    margin-top: auto;
-    margin-bottom: 0%;
-}
-
 footer:nth-child(3) {
     border-top: 1px solid;
     border-color: red;
@@ -35,3 +20,6 @@ footer:nth-child(3) {
 .doc-block_footer {
     margin-right: 15px;
 }
+
+
+/** GESTION DES TAILLES D'ECRANS */

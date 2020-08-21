@@ -1,32 +1,6 @@
-/* HOME PAGE */
-
-#home-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.body-court {
-    font-family: "Lato", sans-serif;
-    margin: 25px;
-    width: 80%;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.container {
-    min-width: 100%;
-    /*background-color: #ced4da;*/
-}
-
-section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
 .page-content {
     margin: auto;
-    width: 60%;
+    width: 80%;
     /*background-image: url('../img/fond-ecran-principal.jpg')*/
 }
 
@@ -43,25 +17,28 @@ section {
 
 /* ELEMENTS LIST FORM */
 
-.form-inline2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+.bloc-form {
+    border: 0px solid black;
+    margin: auto;
     width: 80%;
+    display: flex;
+}
+
+.bloc-form-results {
+    border: 0px solid black;
+    margin: auto;
+    padding-top: 5px;
+    width: 60%;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .form-control2 {
+    padding-left: 5px;
     display: block;
     width: 70%;
-    padding: .375rem .75rem;
-    margin: auto;
+    flex: 1;
     font-size: 1rem;
     line-height: 2.5;
     color: #495057;
@@ -69,6 +46,7 @@ section {
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .25rem;
+    border-radius: 34px;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
@@ -76,11 +54,13 @@ section {
 /* INDEX and RESULT PAGE */
 
 .doc-block {
-    border-radius: 34px;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    padding-left: 10px;
-    padding-right: 5px;
+    border-radius: 5px;
+    border-top-style: groove;
+    border-bottom-style: groove;
+    padding-left: 3px;
+    padding-right: 2px;
+    padding-top: 6px;
+    padding-bottom: 3px;
     font-size: 12px;
 }
 
@@ -99,5 +79,42 @@ section {
     font-size: 14px;
 }
 
+.main-results {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
 
-/* ABOUT PAGE */
+
+/** GESTION DES TAILLES D'ECRANS */
+
+@media screen and (max-width:1024px) {
+    .font-table {
+        font-size: 11px;
+    }
+    .bouton-search {
+        padding: .175rem .25rem;
+        margin-left: 2px;
+    }
+    .bloc-form {
+        margin: 2px;
+        display: flex;
+        width: 100%;
+    }
+    .form-control2 {
+        padding: .175rem .25rem;
+        display: block;
+        width: 90%;
+        flex: 1;
+        font-size: 0.8rem;
+        line-height: 2.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        border-radius: 34px;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+}

@@ -54,8 +54,9 @@ class DocumentsResultsView(generic.ListView):
         # rechercher sur chaque element de la liste
 
         document_list = m.Document.objects.filter(
-            Q(titre_doc__icontains=query) | Q(
-                type_doc__icontains=query) | Q(resume_doc__icontains=query),
+            Q(titre_doc__icontains=query) |
+            Q(auteur__etudiant__nom_complet__icontains=query) |
+            Q(resume_doc__icontains=query),
             pub_date__lte=timezone.now(),
             pub_date__gt=timezone.now() - datetime.timedelta(m.LIMIT_DAYS),
         )  # Tous les résultats doivent être uniques

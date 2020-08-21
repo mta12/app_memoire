@@ -65,3 +65,16 @@ Sol1: pip install --upgrade whitenoise
 
 1- Penser à réduire la taille des images au lancement
 2- gérer les tailles d'écran
+
+************* TAF sur les interfaces: responsive
+sauvegardes: base copy et base_list copy 
+-- Je suis sur l'entete; video 10.00
+
+Les pbs à gérer pour le responsive: 
+- pied de page 
+- entete avec les menus 
+- les différentes pages 
+
+-- video: resp nav -- on doit gérer le clic sur les barres 19:14
+
+-- voir comment faire la recherche sur le nom de l'auteur
