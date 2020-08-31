@@ -1,4 +1,4 @@
-.page-content {
+.home-page-content {
     margin: auto;
     width: 80%;
     /*background-image: url('../img/fond-ecran-principal.jpg')*/
@@ -9,7 +9,7 @@
     margin-top: 10%;
 }
 
-.page-content .section_search h1 {
+.home-page-content .section_search h1 {
     margin-bottom: 4%;
     text-align: center;
 }
@@ -82,7 +82,12 @@
 .main-results {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 85%;
+    margin: auto;
+}
+
+.result-blocks {
+    width: 60%;
     margin: auto;
 }
 
@@ -95,7 +100,7 @@
     }
     .bouton-search {
         padding: .175rem .25rem;
-        margin-left: 2px;
+        margin-left: 10px;
     }
     .bloc-form {
         margin: 2px;
@@ -103,9 +108,10 @@
         width: 100%;
     }
     .form-control2 {
+        display: block;
         padding: .175rem .25rem;
         display: block;
-        width: 90%;
+        width: 100%;
         flex: 1;
         font-size: 0.8rem;
         line-height: 2.5;
@@ -116,5 +122,28 @@
         border-radius: .25rem;
         border-radius: 34px;
         transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+    .result-blocks {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:770px) {
+    /* #navbar {
+        border: 3px red solid;
+        height: 15vh;
+    }*/
+    nav>ul {
+        display: block;
+        left: 0;
+        background: none;
+        position: relative;
+        height: 10vh;
+        top: auto;
+        transition: none;
+        font-size: 9px;
     }
 }

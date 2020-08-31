@@ -25,9 +25,8 @@ header {
     margin: auto;
     /*margin-bottom: 10px;
     
-     border: 2px solid;*/
+     border: 2px solid; background-image: url(../img/fond-ecran-liste.jpg);*/
     border-color: green;
-    background-image: url(../img/fond-ecran-liste.jpg);
 }
 
 main {
@@ -48,6 +47,7 @@ footer {
     body {
         width: 100%;
         overflow-x: hidden;
+        display: block;
     }
     .body-court {
         font-family: "Lato", sans-serif;
@@ -55,5 +55,8 @@ footer {
         width: 100%;
         padding-left: 2%;
         padding-right: 2%;
+    }
+    header {
+        width: 100%;
     }
 }

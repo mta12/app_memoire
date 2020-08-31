@@ -26,50 +26,52 @@
 
 </head>
 
-<body >
+<body class="body-court">
 
     <header>
 
   <nav class="d-flex nav-wrapper navbar navbar-dark bg-transparent ">
 
-            <a class="navbar-brand" href="/">
-                <img src="{% static 'img/LOGO_UY22.jpg' %}" alt="Logo" style="width:40px;">            
-            </a>                      
+            <a class="navbar-brand " href="/">
+                <img src="{% static 'img/LOGO_UY22.jpg' %}" alt="Logo" style="width:40px;">
+            
+            </a>
 
-            <div class="nav-side">
-
-                <ul class="menu-links">
-
-                    <li class="nav-link-wrapper">
-                        <a href="/">Acceuil</a>
-                    </li>
-
-                    <li class="nav-link-wrapper">
-                        <a href="{% url 'main:indexDocs' %}">Index</a>
-                    </li>
-
-                    <li class="nav-link-wrapper">
-                        <a href="/about-us/">A propos de l'Uy2!</a>
-                    </li>
-
-                 </ul>
+            <div class="left-side">
 
                 <div class="nav-link-wrapper">
-                    <input type="checkbox" id="check">
-                    <label for="check" class="checkbtn">
-                        <i class="fas fa-bars">Menu</i>
-                    </label> 
+                    <a href="/">Acceuil</a>
                 </div>
 
-                <!-- 
+                <div class="nav-link-wrapper">
+                    <a href="{% url 'main:indexDocs' %}">Index</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="/about-us/">A propos de l'Uy2!</a>
+                </div>
+
+               
+
+                <!--
                 <div class="nav-link-wrapper">
                     <a href="/admin/"> Administration</a>
                 </div>
                 -->
-                
+
+
             </div>
 
-        
+            <div class="burger">
+                <div class="line1">
+                </div>
+                <div class="line2">
+                </div>
+                <div class="line2">
+                </div>
+            </div>
+        </nav>
+
         </nav>
     </header>
 

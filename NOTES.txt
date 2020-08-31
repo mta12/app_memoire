@@ -44,7 +44,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' 
 git add -A
 (blog) $ git commit -m 'Heroku config'
 (blog) $ git push origin master
-heroku git:remote -a memoireapp-uy2
+heroku git:remote -a memoireapp3
 #ignore static files 
 heroku config:set DISABLE_COLLECTSTATIC=1
 blog) $ git push heroku master
@@ -78,3 +78,14 @@ Les pbs à gérer pour le responsive:
 -- video: resp nav -- on doit gérer le clic sur les barres 19:14
 
 -- voir comment faire la recherche sur le nom de l'auteur
+
+***************** Nouveau déploiement 
+- https://memoireapp3.herokuapp.com/
+
+- pas bon l'affichage dans mon telephone
+- il faut que le body remplisse linterface dans le phone 
+- le clic ne marche pas dans mon telephone 
+- gérer aussi le menu de droite 
+- La pagination est innactive en mobile view -- OK
+
+fontawesome: https://kit.fontawesome.com/a076d05399.js

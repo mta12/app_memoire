@@ -40,8 +40,8 @@ header nav {
 }
 
 .nav-link-wrapper a {
-    /* Dans le nav prend le link a*/
-    color: rgba(255, 30, 0, 0.767);
+    /* Dans le nav prend le link a  rgba(255, 30, 0, 0.767)*/
+    color: whitesmoke;
     /*#8a8a8a;*/
     text-decoration: none;
     /* Ici on anime ausso la couleur*/
@@ -77,6 +77,11 @@ header nav {
     margin: 5px;
 }
 
+.checkbtn {
+    font-size: 40px;
+    color: white;
+}
+
 
 /** GESTION DES TAILLES D'ECRANS */
 
@@ -89,14 +94,12 @@ header nav {
         right: 0px;
         height: 40vh;
         top: 12.5vh;
-        background-color: blue;
         flex-direction: column;
         align-items: center;
         width: 50%;
-        transform: translateX(110%);
-        transition: transform 1.5 ease-in;
+        transform: translateX(100%);
+        transition: transform 10 ease-in;
         overflow-x: inherit;
-        background-image: url(../img/fond-ecran-liste.jpg);
     }
     .left-side .nav-link-wrapper {
         margin: 12px;

@@ -1,8 +1,8 @@
 {% extends "../static_base_list.html" %}
 
 {% block content2  %}
-<div>
 
+<div class="result-blocks">
 {% if document_list %}
 
 {% for document in page_obj %}
@@ -32,7 +32,7 @@
 </div>
 {% endif %}
 
-</div>
+
 
 {% if is_paginated %}
 <nav>
@@ -65,7 +65,7 @@
       {% endif %}
     </ul>
 </nav>
-
+</div>
 
 
 {% endif %}

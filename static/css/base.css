@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body {
@@ -21,18 +22,20 @@ body {
 
 header {
     flex: 1;
-    width: 90%;
     margin: auto;
+    width: 100%;
     /*margin-bottom: 10px;
     
-     border: 2px solid;*/
-    border-color: green;
-    background-image: url(../img/fond-ecran-liste.jpg);
+     border: 2px solid; background-image: url(../img/fond-ecran-liste.jpg);*/
+    border-color: aqua;
+    background-color: rgb(75, 160, 75);
+    height: 80px;
 }
 
 main {
     border-color: yellow;
     width: 100%;
+    margin: auto;
 }
 
 footer {
@@ -44,10 +47,11 @@ footer {
 
 /** GESTION DES TAILLES D'ECRANS */
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:768px) {
     body {
         width: 100%;
         overflow-x: hidden;
+        display: block;
     }
     .body-court {
         font-family: "Lato", sans-serif;
@@ -55,5 +59,8 @@ footer {
         width: 100%;
         padding-left: 2%;
         padding-right: 2%;
+    }
+    header {
+        width: 100%;
     }
 }
