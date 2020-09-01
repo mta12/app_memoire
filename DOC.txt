@@ -154,3 +154,12 @@ much faster, and will also prevent malicious users from seeing details of your a
 error pages.
 
 -- Utiliser le chap7 pour déployer sur heroku (Django for beginners)
+
+***********************
+j'ai fait le commit, il reste le push 
+
+***** LA SUITE C QUOI? 
+- Regarder les options dans 
+# django for beginers 
+# Building django 2.0 
+# Practica django 2

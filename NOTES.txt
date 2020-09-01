@@ -1,6 +1,7 @@
 
 git init
 git status
+git add -A 
 git commit -m "first commit"
 git remote add origin https://github.com/mta12/app_memoire.git
 git push -u origin master
@@ -44,9 +45,9 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' 
 git add -A
 (blog) $ git commit -m 'Heroku config'
 (blog) $ git push origin master
-heroku git:remote -a memoireapp3
+(blog) $ heroku git:remote -a memoireapp3
 #ignore static files 
-heroku config:set DISABLE_COLLECTSTATIC=1
+(blog) $ heroku config:set DISABLE_COLLECTSTATIC=1
 blog) $ git push heroku master
 (blog) $ heroku ps:scale web=1
 

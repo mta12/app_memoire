@@ -129,6 +129,14 @@
         display: flex;
         flex-direction: column;
     }
+    .doc-block {
+        border-radius: 3px;
+        border-top-style: groove;
+        border-bottom-style: groove;
+        margin-top: 3px;
+        margin-bottom: 2px;
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width:770px) {
