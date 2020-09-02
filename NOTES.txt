@@ -92,3 +92,10 @@ Les pbs à gérer pour le responsive:
 - La pagination est innactive en mobile view -- OK
 
 fontawesome: https://kit.fontawesome.com/a076d05399.js
+
+********************** GERONS LA RECHERCHE AVANCEE 
+- création du lien de recherche avancée 
+- création de la page formulaire 
+- création du formulaire 
+- test de l'affichage correcte de la pge et du fonctionnement du lien 
+- 

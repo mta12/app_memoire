@@ -1,21 +1,22 @@
 const navSlide = () => {
-    c = document.getElementById("check");
-    ul = document.querySelector("ul");
-    const burger = document.querySelector(".burger");
+    const c = document.getElementById("check");
+    const ul = document.querySelector("ul");
+    /* const burger = document.querySelector(".burger");
     const nav = document.querySelector(".left-side");
     const navLinks = document.querySelectorAll(".left-side div");
-    const doc = document.querySelector("body");
+    const doc = document.querySelector("body");*/
 
     c.addEventListener("click", () => {
+
         if (c.checked == true) {
             //alert("ok");
 
             ul.classList.toggle("nav-active");
             //ul.classList.
-            console.log("GOD");
+            //console.log("GOD");
             //c.checked = false;
         } else {
-            ul.classList.toggle("nav-de-active");
+            ul.classList.remove("nav-active");
         }
         //console.log("GOD");
     });
