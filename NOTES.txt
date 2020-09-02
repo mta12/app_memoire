@@ -45,8 +45,10 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' 
 git add -A
 (blog) $ git commit -m 'Heroku config'
 (blog) $ git push origin master
+heroku open
 (blog) $ heroku git:remote -a memoireapp3
 #ignore static files 
+
 (blog) $ heroku config:set DISABLE_COLLECTSTATIC=1
 blog) $ git push heroku master
 (blog) $ heroku ps:scale web=1

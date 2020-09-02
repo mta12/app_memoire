@@ -114,9 +114,9 @@ header nav {
 
 /** GESTION DES TAILLES D'ECRANS */
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:550px) {
     nav>h1 {
-        font-size: 20px;
+        font-size: 30px;
     }
     .left-side2 {
         position: absolute;
