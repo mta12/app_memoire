@@ -7,6 +7,13 @@
 .section_search {
     margin-bottom: 30%;
     margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section_search>a {
+    margin: auto;
+    padding-top: 10px;
 }
 
 .home-page-content .section_search h1 {
@@ -50,6 +57,14 @@
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+.rech_avancee:hover {
+    color: rgb(240, 29, 29);
+}
+
+.rech_avancee:active {
+    background-color: rgb(159, 209, 192);
+}
+
 
 /* INDEX and RESULT PAGE */
 
@@ -86,6 +101,11 @@
     margin: auto;
 }
 
+.main-results>a {
+    margin: auto;
+    padding-top: 6px;
+}
+
 .result-blocks {
     width: 60%;
     margin: auto;
@@ -105,14 +125,13 @@
     .bloc-form {
         margin: 2px;
         display: flex;
+        flex-wrap: wrap;
         width: 100%;
     }
     .form-control2 {
         display: block;
-        padding: .175rem .25rem;
         display: block;
         width: 100%;
-        flex: 1;
         font-size: 0.8rem;
         line-height: 2.5;
         color: #495057;
@@ -137,6 +156,10 @@
         margin-bottom: 2px;
         font-size: 10px;
     }
+    .main-results>a {
+        margin: auto;
+        padding-top: 2px;
+    }
 }
 
 @media screen and (max-width:770px) {
@@ -153,5 +176,19 @@
         top: auto;
         transition: none;
         font-size: 9px;
+    }
+    .form-control2 {
+        padding-left: 5px;
+        width: 100%;
+        flex: 1;
+        font-size: 0.8rem;
+        line-height: 2.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        border-radius: 34px;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     }
 }

@@ -94,8 +94,10 @@ Les pbs à gérer pour le responsive:
 fontawesome: https://kit.fontawesome.com/a076d05399.js
 
 ********************** GERONS LA RECHERCHE AVANCEE 
-- création du lien de recherche avancée 
+- création du lien de recherche avancée (Home--OK, Index--Encours, Search--NOK)
 - création de la page formulaire 
 - création du formulaire 
 - test de l'affichage correcte de la pge et du fonctionnement du lien 
-- 
+- gestion des valeurs transmises par le formulaire avec une fonction view 
+- test de la vue 
+- On passe à la connexion des users. 
