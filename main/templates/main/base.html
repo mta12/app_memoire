@@ -1,88 +1,85 @@
 {% load static %}
-<!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
-<!-- Le Template présente la page de base -->
-<head>
-<!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+  <!-- Le Template présente la page de base -->
+  <head>
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<meta
+    <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-­fit=yes">
+      content="width=device-width, initial-scale=1, shrink-to-­fit=yes"
+    />
 
-<!--[if lte IE 7]>
-<link rel="stylesheet" href="style_ie.css" />
-<![endif]-->
-<title>UY2 Thesis Online</title>
+    <!--[if lte IE 7]>
+      <link rel="stylesheet" href="style_ie.css" />
+    <![endif]-->
+    <title>UY2 Thesis Online</title>
 
- <!-- Bootstrap CSS <script src="https://kit.fontawesome.com/a076d05399.js"></script>  
+    <!-- Bootstrap CSS <script src="https://kit.fontawesome.com/a076d05399.js"></script>  
  <script src="{% static 'js/fontawesome.js' %}"></script>-->
- <link rel="stylesheet" href="{% static 'css/base.css' %}">
-<link rel="stylesheet" href= "{% static 'css/tete.css' %}" />
-<link  rel="stylesheet" href="{% static 'css/corps.css' %}"/>
-<link  rel="stylesheet" href="{% static 'css/pied.css' %}"/>
-<link  rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/tete.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/corps.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/pied.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-</head>
-
-<body id='body'>
-
+  <body id="body">
     <header>
-        <nav class="d-flex nav-wrapper navbar navbar-dark bg-transparent ">
+      <nav class="d-flex nav-wrapper navbar navbar-dark bg-transparent">
+        <a class="navbar-brand" href="/">
+          <img
+            src="{% static 'img/LOGO_UY22.jpg' %}"
+            alt="Logo"
+            style="width: 40px"
+          />
+        </a>
 
-            <a class="navbar-brand" href="/">
-                <img src="{% static 'img/LOGO_UY22.jpg' %}" alt="Logo" style="width:40px;">            
-            </a>                      
+        <div class="nav-side">
+          <ul class="menu-links">
+            <li class="nav-link-wrapper">
+              <a href="/">Acceuil</a>
+            </li>
 
-            <div class="nav-side">
+            <li class="nav-link-wrapper">
+              <a href="{% url 'main:indexDocs' %}">Index</a>
+            </li>
 
-                <ul class="menu-links">
+            <li class="nav-link-wrapper">
+              <a href="/about-us/">A propos de l'Uy2!</a>
+            </li>
+          </ul>
 
-                    <li class="nav-link-wrapper">
-                        <a href="/">Acceuil</a>
-                    </li>
+          <div class="nav-link-wrapper">
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+              <i class="fa fa-bars"></i>
+            </label>
+          </div>
 
-                    <li class="nav-link-wrapper">
-                        <a href="{% url 'main:indexDocs' %}">Index</a>
-                    </li>
-
-                    <li class="nav-link-wrapper">
-                        <a href="/about-us/">A propos de l'Uy2!</a>
-                    </li>
-
-                 </ul>
-
-                <div class="nav-link-wrapper">
-                    <input type="checkbox" id="check">
-                    <label for="check" class="checkbtn">
-                        <i class="fas fa-bars">Menu</i>
-                    </label> 
-                </div>
-
-                <!-- 
+          <!-- 
                 <div class="nav-link-wrapper">
                     <a href="/admin/"> Administration</a>
                 </div>
                 -->
-                
-            </div>
-
-        
-        </nav>
+        </div>
+      </nav>
     </header>
 
-    <main>
-        {% block content %}
-        {% endblock content %}        
-    </main>
+    <main>{% block content %} {% endblock content %}</main>
 
-	<footer class="pied-page">
-		<p class="footer_copyright">Copyright © Uy2-Soa. All rights reserved.</p>
-	</footer>
+    <footer class="pied-page">
+      <p class="footer_copyright">Copyright © Uy2-Soa. All rights reserved.</p>
+    </footer>
 
-<script src="{% static 'js/base.js' %}"></script> 
-<!-- <script src="{% static 'js/base.js' %}"></script> -->
-</body>
+    <script src="{% static 'js/base.js' %}"></script>
+    <!-- <script src="{% static 'js/base.js' %}"></script> -->
+  </body>
 </html>
