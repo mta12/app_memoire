@@ -1,0 +1,28 @@
+{% extends "./base_list.html" %} {% block content %}
+<div>
+  <form
+    class="bloc-form-results"
+    method="GET"
+    action="{% url 'main:searchDocs' %}"
+  >
+    <input
+      name="q"
+      id="id_q"
+      class="form-control2 mr-sm-2"
+      type="text"
+      placeholder="Saisir un titre, auteur, mot clé ici..."
+    />
+    <button
+      class="bouton-search btn btn-outline-success my-2 my-sm-0"
+      type="submit"
+    >
+      OK!
+    </button>
+  </form>
+</div>
+
+<!--
+<a href="#" class="rech_avancee">Recherche Avancée</a>
+-->
+
+<br />

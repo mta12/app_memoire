@@ -16,4 +16,8 @@ urlpatterns = [
          name='downloadDocs'),  # test -- (si lien telechargement s'affiche ou pas, si possible de tel...)
     path('index/', views.DocumentsIndexView.as_view(),
          name='indexDocs'),  # test -- OK
+    path('rech-avancee-home/',
+         TemplateView.as_view(template_name="main/rech_avancee_home.html")),  # test -- Not OK
+    path('rech-avancee-index/',
+         TemplateView.as_view(template_name="main/docs/rech_avancee_index.html")),  # test -- Not OK
 ]

@@ -1,0 +1,46 @@
+{% extends "main/base.html" %} {% block content %}
+<div class="home-page-content">
+  <nav class="section_search">
+    <h1>
+      <strong>
+        Receuil des Mémoires <br />
+        à l'Uy2-Soa
+      </strong>
+    </h1>
+    <form
+      class="bloc-form-rech-avancee"
+      method="GET"
+      action="{% url 'main:searchDocs' %}"
+    >
+      <input
+        name="q_auteur"
+        id="input_auteur"
+        class="form-control2 mr-sm-2"
+        type="text"
+        placeholder="Nom de l'auteur..."
+      />
+      <input
+        name="q_titre"
+        id="input_titre"
+        class="form-control2 mr-sm-2"
+        type="text"
+        placeholder="Titre du document..."
+      />
+      <input
+        name="q_resume"
+        id="input_resume"
+        class="form-control2 mr-sm-2"
+        type="text"
+        placeholder="Texte dans le résumé..."
+      />
+      <input
+        class="bouton-search btn btn-outline-success my-2 my-sm-0"
+        type="submit"
+      />
+    </form>
+
+    <!-- -->
+  </nav>
+</div>
+
+{% endblock content %}

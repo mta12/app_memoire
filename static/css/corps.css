@@ -112,6 +112,27 @@
 }
 
 
+/* FORMULAIRE AVANCEE ********************/
+
+.bloc-form-rech-avancee {
+    border: 0px solid black;
+    margin: auto;
+    width: 80%;
+    display: flex;
+}
+
+input[type=submit],
+input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
 /** GESTION DES TAILLES D'ECRANS */
 
 @media screen and (max-width:1024px) {
@@ -128,8 +149,11 @@
         flex-wrap: wrap;
         width: 100%;
     }
+    .bloc-form-results {
+        width: 90%;
+        padding-top: 2px;
+    }
     .form-control2 {
-        display: block;
         display: block;
         width: 100%;
         font-size: 0.8rem;
@@ -190,5 +214,18 @@
         border-radius: .25rem;
         border-radius: 34px;
         transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+    .bloc-form-rech-avancee {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .bloc-form-rech-avancee>input {
+        margin-bottom: 6px;
+    }
+    .bloc-form-rech-avancee>input[type=submit] {
+        height: 40px;
+        text-align: center;
+        padding-bottom: 0px;
+        padding-top: 0px;
     }
 }

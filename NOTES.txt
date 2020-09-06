@@ -95,9 +95,22 @@ fontawesome: https://kit.fontawesome.com/a076d05399.js
 
 ********************** GERONS LA RECHERCHE AVANCEE 
 - création du lien de recherche avancée (Home--OK, Index--Encours, Search--NOK)
+    * creation de rech_avancee_home et index (ajout des ref dans urls.py)
+    * création de la page rech avancee home (OK)
+    * finission de la page rech index 
+    * Etablissement des liens avec les pages 
+    * gestion des requetes 
+    * lancement de la vue 
 - création de la page formulaire 
 - création du formulaire 
 - test de l'affichage correcte de la pge et du fonctionnement du lien 
 - gestion des valeurs transmises par le formulaire avec une fonction view 
 - test de la vue 
 - On passe à la connexion des users. 
+
+****************************GESTION DE LA CONNEXION 
+## Dans la partie how-to de css il ya les pop-up forms qu'on peut utiliser. 
+Mais apprenons d'abord les formulaires sur django avant de faire l'autre. 
+Utilisons de préférence le doc de reférence (pour la formation) car il s'agit d'une opération importante. 
+- Interface de connexion 
+- Interface d'enregistrement 
